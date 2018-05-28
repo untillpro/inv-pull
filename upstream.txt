@@ -5,3 +5,4 @@ gmp2
 gmp3
 gmp4
 gmp5
+gmp6
