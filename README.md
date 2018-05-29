@@ -13,3 +13,4 @@ mg4
 mg5
 conflict1
 gmp5
+mg-feature
