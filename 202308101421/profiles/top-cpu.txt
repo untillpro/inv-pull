@@ -1,0 +1,385 @@
+File: airs-bp
+Type: cpu
+Time: Aug 10, 2023 at 2:23pm (UTC)
+Duration: 10s, Total samples = 1.20s (12.00%)
+Showing nodes accounting for 1.20s, 100% of 1.20s total
+      flat  flat%   sum%        cum   cum%
+     0.18s 15.00% 15.00%      0.18s 15.00%  runtime.futex
+     0.17s 14.17% 29.17%      0.17s 14.17%  runtime/internal/syscall.Syscall6
+     0.04s  3.33% 32.50%      0.11s  9.17%  runtime.mallocgc
+     0.04s  3.33% 35.83%      0.06s  5.00%  runtime.mapaccess2_faststr
+     0.02s  1.67% 37.50%      0.02s  1.67%  aeshashbody
+     0.02s  1.67% 39.17%      0.03s  2.50%  github.com/google/flatbuffers/go.(*Builder).Prep
+     0.02s  1.67% 40.83%      0.02s  1.67%  runtime.(*itabTableType).find
+     0.02s  1.67% 42.50%      0.02s  1.67%  runtime.(*waitq).dequeue (inline)
+     0.02s  1.67% 44.17%      0.02s  1.67%  runtime.checkdead
+     0.02s  1.67% 45.83%      0.02s  1.67%  runtime.fastrand (inline)
+     0.02s  1.67% 47.50%      0.02s  1.67%  runtime.mapaccess2
+     0.02s  1.67% 49.17%      0.02s  1.67%  runtime.memclrNoHeapPointers
+     0.02s  1.67% 50.83%      0.02s  1.67%  runtime.memmove
+     0.02s  1.67% 52.50%      0.02s  1.67%  runtime.nanotime (inline)
+     0.02s  1.67% 54.17%      0.02s  1.67%  runtime.nextFreeFast (inline)
+     0.02s  1.67% 55.83%      0.02s  1.67%  runtime.write1
+     0.01s  0.83% 56.67%      0.01s  0.83%  context.(*cancelCtx).Value
+     0.01s  0.83% 57.50%      0.02s  1.67%  encoding/base64.(*Encoding).Decode
+     0.01s  0.83% 58.33%      0.01s  0.83%  encoding/base64.assemble64 (inline)
+     0.01s  0.83% 59.17%      0.01s  0.83%  encoding/json.checkValid
+     0.01s  0.83% 60.00%      0.01s  0.83%  encoding/json.stateEndValue
+     0.01s  0.83% 60.83%      0.01s  0.83%  fmt.(*buffer).writeString (inline)
+     0.01s  0.83% 61.67%      0.01s  0.83%  github.com/gocql/gocql.(*Query).shouldPrepare.func1
+     0.01s  0.83% 62.50%      0.01s  0.83%  github.com/gocql/gocql.(*Session).NewBatch
+     0.01s  0.83% 63.33%      0.12s 10.00%  github.com/gocql/gocql.(*writeCoalescer).writeFlusherImpl
+     0.01s  0.83% 64.17%      0.01s  0.83%  github.com/google/flatbuffers/go.(*Builder).Slot (inline)
+     0.01s  0.83% 65.00%      0.02s  1.67%  github.com/google/flatbuffers/go.(*Builder).WriteVtable
+     0.01s  0.83% 65.83%      0.01s  0.83%  github.com/voedger/voedger/pkg/appdef.(*field).Verifiable
+     0.01s  0.83% 66.67%      0.09s  7.50%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).build
+     0.01s  0.83% 67.50%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.CheckRefIntegrity.func1
+     0.01s  0.83% 68.33%      0.01s  0.83%  github.com/voedger/voedger/pkg/pipeline.(*flushTimer).reset (inline)
+     0.01s  0.83% 69.17%      0.01s  0.83%  github.com/voedger/voedger/pkg/processors/command.(*cmdProc).authorizeCUDs
+     0.01s  0.83% 70.00%      0.04s  3.33%  github.com/voedger/voedger/pkg/projectors.(*asyncActualizer).readPlogToTheEnd2
+     0.01s  0.83% 70.83%      0.06s  5.00%  github.com/voedger/voedger/pkg/projectors.(*asyncProjector).DoAsync
+     0.01s  0.83% 71.67%      0.09s  7.50%  github.com/voedger/voedger/pkg/state.(*viewRecordsStorage).ApplyBatch
+     0.01s  0.83% 72.50%      0.01s  0.83%  github.com/voedger/voedger/pkg/utils.IsTest
+     0.01s  0.83% 73.33%      0.01s  0.83%  net.wrapSyscallError (inline)
+     0.01s  0.83% 74.17%      0.01s  0.83%  net/http.(*response).Header
+     0.01s  0.83% 75.00%      0.01s  0.83%  regexp/syntax.(*Inst).MatchRunePos
+     0.01s  0.83% 75.83%      0.01s  0.83%  runtime.(*mspan).divideByElemSize (inline)
+     0.01s  0.83% 76.67%      0.01s  0.83%  runtime.(*randomOrder).start (inline)
+     0.01s  0.83% 77.50%      0.01s  0.83%  runtime.(*spanSet).pop
+     0.01s  0.83% 78.33%      0.01s  0.83%  runtime.(*spanSet).push
+     0.01s  0.83% 79.17%      0.01s  0.83%  runtime.acquirem (inline)
+     0.01s  0.83% 80.00%      0.02s  1.67%  runtime.assertE2I
+     0.01s  0.83% 80.83%      0.02s  1.67%  runtime.casgstatus
+     0.01s  0.83% 81.67%      0.01s  0.83%  runtime.exitsyscallfast
+     0.01s  0.83% 82.50%      0.02s  1.67%  runtime.findObject
+     0.01s  0.83% 83.33%      0.03s  2.50%  runtime.getitab
+     0.01s  0.83% 84.17%      0.01s  0.83%  runtime.greyobject
+     0.01s  0.83% 85.00%      0.02s  1.67%  runtime.lock2
+     0.01s  0.83% 85.83%      0.02s  1.67%  runtime.makeBucketArray
+     0.01s  0.83% 86.67%      0.01s  0.83%  runtime.mapaccess1
+     0.01s  0.83% 87.50%      0.01s  0.83%  runtime.nanotime1
+     0.01s  0.83% 88.33%      0.08s  6.67%  runtime.netpoll
+     0.01s  0.83% 89.17%      0.09s  7.50%  runtime.notesleep
+     0.01s  0.83% 90.00%      0.01s  0.83%  runtime.pcvalue
+     0.01s  0.83% 90.83%      0.01s  0.83%  runtime.procyield
+     0.01s  0.83% 91.67%      0.01s  0.83%  runtime.read
+     0.01s  0.83% 92.50%      0.01s  0.83%  runtime.releaseSudog
+     0.01s  0.83% 93.33%      0.05s  4.17%  runtime.selectgo
+     0.01s  0.83% 94.17%      0.07s  5.83%  runtime.send
+     0.01s  0.83% 95.00%      0.01s  0.83%  runtime.spanOfUnchecked (inline)
+     0.01s  0.83% 95.83%      0.04s  3.33%  runtime.stealWork
+     0.01s  0.83% 96.67%      0.17s 14.17%  runtime.systemstack
+     0.01s  0.83% 97.50%      0.01s  0.83%  runtime.usleep
+     0.01s  0.83% 98.33%      0.01s  0.83%  strconv.readFloat
+     0.01s  0.83% 99.17%      0.01s  0.83%  sync/atomic.(*Int32).Add (inline)
+     0.01s  0.83%   100%      0.01s  0.83%  time.Now
+         0     0%   100%      0.01s  0.83%  bufio.(*Reader).Peek
+         0     0%   100%      0.06s  5.00%  bufio.(*Reader).Read
+         0     0%   100%      0.01s  0.83%  bufio.(*Reader).fill
+         0     0%   100%      0.01s  0.83%  bufio.(*Writer).Flush
+         0     0%   100%      0.01s  0.83%  context.(*cancelCtx).cancel
+         0     0%   100%      0.01s  0.83%  context.WithCancel.func1
+         0     0%   100%      0.01s  0.83%  context.parentCancelCtx
+         0     0%   100%      0.01s  0.83%  context.removeChild
+         0     0%   100%      0.02s  1.67%  encoding/base64.(*Encoding).DecodeString
+         0     0%   100%      0.01s  0.83%  encoding/json.(*decodeState).array
+         0     0%   100%      0.07s  5.83%  encoding/json.(*decodeState).arrayInterface
+         0     0%   100%      0.01s  0.83%  encoding/json.(*decodeState).convertNumber
+         0     0%   100%      0.01s  0.83%  encoding/json.(*decodeState).literalInterface
+         0     0%   100%      0.08s  6.67%  encoding/json.(*decodeState).object
+         0     0%   100%      0.07s  5.83%  encoding/json.(*decodeState).objectInterface
+         0     0%   100%      0.01s  0.83%  encoding/json.(*decodeState).rescanLiteral
+         0     0%   100%      0.08s  6.67%  encoding/json.(*decodeState).unmarshal
+         0     0%   100%      0.08s  6.67%  encoding/json.(*decodeState).value
+         0     0%   100%      0.07s  5.83%  encoding/json.(*decodeState).valueInterface
+         0     0%   100%      0.09s  7.50%  encoding/json.Unmarshal
+         0     0%   100%      0.02s  1.67%  encoding/json.unquote (inline)
+         0     0%   100%      0.01s  0.83%  fmt.(*fmt).fmtS
+         0     0%   100%      0.01s  0.83%  fmt.(*fmt).padString
+         0     0%   100%      0.01s  0.83%  fmt.(*pp).doPrintf
+         0     0%   100%      0.01s  0.83%  fmt.(*pp).fmtString
+         0     0%   100%      0.01s  0.83%  fmt.(*pp).printArg
+         0     0%   100%      0.01s  0.83%  fmt.Sprintf
+         0     0%   100%      0.04s  3.33%  github.com/gocql/gocql.(*Batch).execute
+         0     0%   100%      0.05s  4.17%  github.com/gocql/gocql.(*Conn).exec
+         0     0%   100%      0.04s  3.33%  github.com/gocql/gocql.(*Conn).executeBatch
+         0     0%   100%      0.02s  1.67%  github.com/gocql/gocql.(*Conn).executeQuery
+         0     0%   100%      0.05s  4.17%  github.com/gocql/gocql.(*Conn).recv
+         0     0%   100%      0.05s  4.17%  github.com/gocql/gocql.(*Conn).serve
+         0     0%   100%      0.02s  1.67%  github.com/gocql/gocql.(*Query).Exec
+         0     0%   100%      0.02s  1.67%  github.com/gocql/gocql.(*Query).Iter
+         0     0%   100%      0.02s  1.67%  github.com/gocql/gocql.(*Query).execute
+         0     0%   100%      0.01s  0.83%  github.com/gocql/gocql.(*Query).shouldPrepare
+         0     0%   100%      0.04s  3.33%  github.com/gocql/gocql.(*Session).ExecuteBatch
+         0     0%   100%      0.04s  3.33%  github.com/gocql/gocql.(*Session).executeBatch
+         0     0%   100%      0.02s  1.67%  github.com/gocql/gocql.(*Session).executeQuery
+         0     0%   100%      0.06s  5.00%  github.com/gocql/gocql.(*queryExecutor).attemptQuery
+         0     0%   100%      0.06s  5.00%  github.com/gocql/gocql.(*queryExecutor).do
+         0     0%   100%      0.06s  5.00%  github.com/gocql/gocql.(*queryExecutor).executeQuery
+         0     0%   100%      0.10s  8.33%  github.com/gocql/gocql.(*writeCoalescer).flush
+         0     0%   100%      0.02s  1.67%  github.com/gocql/gocql.(*writeCoalescer).writeContext
+         0     0%   100%      0.12s 10.00%  github.com/gocql/gocql.(*writeCoalescer).writeFlusher
+         0     0%   100%      0.01s  0.83%  github.com/gocql/gocql.(*writeCoalescer).writeFlusher.func1
+         0     0%   100%      0.01s  0.83%  github.com/gocql/gocql.newFramer (inline)
+         0     0%   100%      0.04s  3.33%  github.com/gocql/gocql.readHeader
+         0     0%   100%      0.02s  1.67%  github.com/golang-jwt/jwt.(*Parser).Parse (inline)
+         0     0%   100%      0.02s  1.67%  github.com/golang-jwt/jwt.(*Parser).ParseUnverified
+         0     0%   100%      0.02s  1.67%  github.com/golang-jwt/jwt.(*Parser).ParseWithClaims
+         0     0%   100%      0.02s  1.67%  github.com/golang-jwt/jwt.DecodeSegment (inline)
+         0     0%   100%      0.02s  1.67%  github.com/golang-jwt/jwt.Parse
+         0     0%   100%      0.02s  1.67%  github.com/google/flatbuffers/go.(*Builder).EndObject (inline)
+         0     0%   100%      0.01s  0.83%  github.com/google/flatbuffers/go.(*Builder).PrependInt32
+         0     0%   100%      0.01s  0.83%  github.com/google/flatbuffers/go.(*Builder).PrependInt64
+         0     0%   100%      0.01s  0.83%  github.com/google/flatbuffers/go.(*Builder).PrependVOffsetT
+         0     0%   100%      0.01s  0.83%  github.com/google/flatbuffers/go.(*Builder).growByteBuffer (inline)
+         0     0%   100%      0.01s  0.83%  github.com/gorilla/mux.(*Route).Match
+         0     0%   100%      0.01s  0.83%  github.com/gorilla/mux.(*Router).Match
+         0     0%   100%      0.05s  4.17%  github.com/gorilla/mux.(*Router).ServeHTTP
+         0     0%   100%      0.01s  0.83%  github.com/gorilla/mux.(*routeRegexp).Match
+         0     0%   100%      0.02s  1.67%  github.com/hashicorp/golang-lru/v2.(*Cache[...]).Get
+         0     0%   100%      0.01s  0.83%  github.com/hashicorp/golang-lru/v2/simplelru.(*LRU[...]).Get
+         0     0%   100%      0.01s  0.83%  github.com/untillpro/airs-bp3/packages/air/dashboard.(*articleService).isPromoArticle
+         0     0%   100%      0.02s  1.67%  github.com/untillpro/airs-bp3/packages/air/dashboard.(*dashboardProjectorLogic).do
+         0     0%   100%      0.01s  0.83%  github.com/untillpro/airs-bp3/packages/air/dashboard.(*dashboardProjectorLogic).do.func3
+         0     0%   100%      0.01s  0.83%  github.com/untillpro/airs-bp3/packages/air/dashboard.(*dashboardProjectorLogic).updateDailyOrders
+         0     0%   100%      0.02s  1.67%  github.com/untillpro/airs-bp3/packages/air/dashboard.glob..func1
+         0     0%   100%      0.01s  0.83%  github.com/untillpro/airs-bp3/packages/air/ordersdates.glob..func1
+         0     0%   100%      0.02s  1.67%  github.com/untillpro/airs-bp3/packages/air/tablesoverview.glob..func4
+         0     0%   100%      0.02s  1.67%  github.com/untillpro/airs-bp3/packages/air/tablesoverview.glob..func4.1
+         0     0%   100%      0.01s  0.83%  github.com/untillpro/airs-bp3/packages/air/tablesoverview.glob..func4.2
+         0     0%   100%      0.01s  0.83%  github.com/untillpro/dynobuffers.(*Buffer).Reset
+         0     0%   100%      0.05s  4.17%  github.com/untillpro/dynobuffers.(*Buffer).ToBytes
+         0     0%   100%      0.05s  4.17%  github.com/untillpro/dynobuffers.(*Buffer).ToBytesNilled
+         0     0%   100%      0.05s  4.17%  github.com/untillpro/dynobuffers.(*Buffer).encodeBuffer
+         0     0%   100%      0.01s  0.83%  github.com/untillpro/dynobuffers.(*Buffer).releaseFields
+         0     0%   100%      0.01s  0.83%  github.com/untillpro/dynobuffers.(*modifiedField).Release
+         0     0%   100%      0.01s  0.83%  github.com/untillpro/dynobuffers.copyFixedSizeValue
+         0     0%   100%      0.02s  1.67%  github.com/untillpro/dynobuffers.encodeFixedSizeValue
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/appdef.(*appDef).DefByName
+         0     0%   100%      0.06s  5.00%  github.com/voedger/voedger/pkg/appdef.(*fields).Field (partial-inline)
+         0     0%   100%      0.06s  5.00%  github.com/voedger/voedger/pkg/appdef.(*fields).Fields
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/iauthnzimpl.(*implIAuthenticator).Authenticate
+         0     0%   100%      0.05s  4.17%  github.com/voedger/voedger/pkg/in10nmem.(*N10nBroker).WatchChannel
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/in10nmem.(*N10nBroker).validateChannel
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/in10nmem.notifier
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/istoragecache.(*cachedAppStorage).Put
+         0     0%   100%      0.06s  5.00%  github.com/voedger/voedger/pkg/istoragecache.(*cachedAppStorage).PutBatch
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/istorageimpl/istoragecas.(*appStorageType).Put
+         0     0%   100%      0.06s  5.00%  github.com/voedger/voedger/pkg/istorageimpl/istoragecas.(*appStorageType).PutBatch
+         0     0%   100%      0.07s  5.83%  github.com/voedger/voedger/pkg/istructsmem.(*appEventsType).PutPlog
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*appEventsType).PutWlog
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/istructsmem.(*appEventsType).ReadPLog
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem.(*appViewRecords).Get
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*appViewRecords).NewValueBuilder
+         0     0%   100%      0.08s  6.67%  github.com/voedger/voedger/pkg/istructsmem.(*appViewRecords).PutBatch
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem.(*appViewRecords).storeViewRecord
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*cudType).build
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem.(*cudType).enumRecs
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).Elements
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).EnumElements (inline)
+         0     0%   100%      0.04s  3.33%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).build
+         0     0%   100%      0.04s  3.33%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).build.func1
+         0     0%   100%      0.05s  4.17%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).forEach
+         0     0%   100%      0.05s  4.17%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).regenerateIDs
+         0     0%   100%      0.05s  4.17%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).regenerateIDs.func2
+         0     0%   100%      0.04s  3.33%  github.com/voedger/voedger/pkg/istructsmem.(*eventType).BuildRawEvent
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem.(*eventType).CUDs
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*eventType).build
+         0     0%   100%      0.05s  4.17%  github.com/voedger/voedger/pkg/istructsmem.(*eventType).regenerateIDs
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*keyType).Equals
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*keyType).PutInt32
+         0     0%   100%      0.04s  3.33%  github.com/voedger/voedger/pkg/istructsmem.(*keyType).build
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).PutInt64
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).RecordIDs
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).putValue
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*updateRecType).build
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*validator).validDocument (inline)
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*validator).validElement
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*validator).validElementContainers
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*validator).validElementContainers.func2
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem.(*validator).validRecord
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem.(*validator).validRow
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem.(*validators).validCUD
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*validators).validCUDRefRawIDs
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*validators).validCUDRefRawIDs.func1
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/istructsmem.(*validators).validEvent
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem.(*validators).validEventCUDs
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*validators).validEventObjects
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*validators).validObject
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*validators).validRecord
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.(*valueType).validDefs
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem.CheckRefIntegrity
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.newNullValue (inline)
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/istructsmem.newValue
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem/internal/plogcache.(*Cache).Get
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/istructsmem/internal/utils.CopyBytes (inline)
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/itokens-payloads.(*implIAppTokens).ValidateToken
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/itokensjwt.(*JWTSigner).ValidateToken
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/objcache.(*cache[...]).Get
+         0     0%   100%      0.06s  5.00%  github.com/voedger/voedger/pkg/pipeline.(*WiredOperator).doAsync
+         0     0%   100%      0.40s 33.33%  github.com/voedger/voedger/pkg/pipeline.(*WiredOperator).doSync
+         0     0%   100%      0.38s 31.67%  github.com/voedger/voedger/pkg/pipeline.(*implISyncOperatorSimple).DoSync
+         0     0%   100%      0.05s  4.17%  github.com/voedger/voedger/pkg/pipeline.(*serviceOperator).DoSync.func1
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/pipeline.AsyncPipeline.SendAsync
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/pipeline.SyncPipeline.DoSync
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/pipeline.SyncPipeline.SendSync
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/pipeline.forkOperator.DoSync
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/pipeline.p_flush
+         0     0%   100%      0.12s 10.00%  github.com/voedger/voedger/pkg/pipeline.puller_async
+         0     0%   100%      0.46s 38.33%  github.com/voedger/voedger/pkg/pipeline.puller_sync
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/pipeline.switchOperator.DoSync
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/processors/command.(*cmdProc).authenticate
+         0     0%   100%      0.07s  5.83%  github.com/voedger/voedger/pkg/processors/command.(*cmdProc).putPLog
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/processors/command.(*cmdProc).validate
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/processors/command.(*cmdProc).validate.func2
+         0     0%   100%      0.04s  3.33%  github.com/voedger/voedger/pkg/processors/command.buildRawEvent
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/processors/command.checkArgsRefIntegrity
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/processors/command.getWSDesc
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/processors/command.putWLog
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/processors/command.syncProjectorsBegin
+         0     0%   100%      0.08s  6.67%  github.com/voedger/voedger/pkg/processors/command.unmarshalRequestBody
+         0     0%   100%      0.05s  4.17%  github.com/voedger/voedger/pkg/projectors.(*asyncActualizer).Run
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/projectors.(*asyncActualizer).handleEvent
+         0     0%   100%      0.05s  4.17%  github.com/voedger/voedger/pkg/projectors.(*asyncActualizer).keepReading
+         0     0%   100%      0.04s  3.33%  github.com/voedger/voedger/pkg/projectors.(*asyncActualizer).keepReading.func1
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/projectors.(*asyncProjector).Flush
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/projectors.(*asyncProjector).flush
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/projectors.newSyncBranch.func1
+         0     0%   100%      0.07s  5.83%  github.com/voedger/voedger/pkg/projectors.syncActualizerFactory.func3
+         0     0%   100%      0.04s  3.33%  github.com/voedger/voedger/pkg/router.corsHandler.func1
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/router.createRequest
+         0     0%   100%      0.04s  3.33%  github.com/voedger/voedger/pkg/router.requestHandler.func1
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/router.writeResponse
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/state.(*bundleImpl).get
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/state.(*bundledHostState).CanExist
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/state.(*bundledHostState).FlushBundles
+         0     0%   100%      0.07s  5.83%  github.com/voedger/voedger/pkg/state.(*hostState).ApplyIntents
+         0     0%   100%      0.03s  2.50%  github.com/voedger/voedger/pkg/state.(*hostState).CanExist
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/state.(*hostState).NewValue
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/state.(*recordsStorage).Get
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/state.(*viewRecordsKeyBuilder).Equals
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/state.(*viewRecordsStorage).Get
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/state.(*viewRecordsStorage).ProvideValueBuilder
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/state.(*viewRecordsValueBuilder).PutInt64
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/sys/builtin.provideRefIntegrityValidator.func2
+         0     0%   100%      0.02s  1.67%  github.com/voedger/voedger/pkg/sys/journal.glob..func1
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/sys/uniques.provideEventUniqueValidator.func1
+         0     0%   100%      0.01s  0.83%  github.com/voedger/voedger/pkg/utils.IsDummyWS
+         0     0%   100%      0.07s  5.83%  internal/poll.(*FD).Read
+         0     0%   100%      0.01s  0.83%  internal/poll.(*FD).Write
+         0     0%   100%      0.08s  6.67%  internal/poll.(*FD).Writev
+         0     0%   100%      0.08s  6.67%  internal/poll.ignoringEINTRIO (inline)
+         0     0%   100%      0.08s  6.67%  internal/poll.writev
+         0     0%   100%      0.02s  1.67%  io.(*LimitedReader).Read
+         0     0%   100%      0.02s  1.67%  io.ReadAll
+         0     0%   100%      0.04s  3.33%  io.ReadAtLeast
+         0     0%   100%      0.04s  3.33%  io.ReadFull (inline)
+         0     0%   100%      0.10s  8.33%  net.(*Buffers).WriteTo
+         0     0%   100%      0.07s  5.83%  net.(*conn).Read
+         0     0%   100%      0.01s  0.83%  net.(*conn).Write
+         0     0%   100%      0.09s  7.50%  net.(*conn).writeBuffers
+         0     0%   100%      0.07s  5.83%  net.(*netFD).Read
+         0     0%   100%      0.01s  0.83%  net.(*netFD).Write
+         0     0%   100%      0.09s  7.50%  net.(*netFD).writeBuffers
+         0     0%   100%      0.02s  1.67%  net/http.(*body).Read
+         0     0%   100%      0.02s  1.67%  net/http.(*body).readLocked
+         0     0%   100%      0.01s  0.83%  net/http.(*chunkWriter).flush
+         0     0%   100%      0.07s  5.83%  net/http.(*conn).serve
+         0     0%   100%      0.03s  2.50%  net/http.(*connReader).Read
+         0     0%   100%      0.01s  0.83%  net/http.(*response).Flush
+         0     0%   100%      0.01s  0.83%  net/http.(*response).FlushError
+         0     0%   100%      0.04s  3.33%  net/http.HandlerFunc.ServeHTTP
+         0     0%   100%      0.01s  0.83%  net/http.checkConnErrorWriter.Write
+         0     0%   100%      0.05s  4.17%  net/http.serverHandler.ServeHTTP
+         0     0%   100%      0.01s  0.83%  regexp.(*Regexp).MatchString (inline)
+         0     0%   100%      0.01s  0.83%  regexp.(*Regexp).doExecute
+         0     0%   100%      0.01s  0.83%  regexp.(*Regexp).doMatch (inline)
+         0     0%   100%      0.01s  0.83%  regexp.(*Regexp).doOnePass
+         0     0%   100%      0.01s  0.83%  regexp/syntax.(*Inst).MatchRune (inline)
+         0     0%   100%      0.01s  0.83%  runtime.(*mcache).nextFree
+         0     0%   100%      0.01s  0.83%  runtime.(*mcache).refill
+         0     0%   100%      0.01s  0.83%  runtime.(*mcentral).uncacheSpan
+         0     0%   100%      0.01s  0.83%  runtime.(*mheap).nextSpanForSweep
+         0     0%   100%      0.01s  0.83%  runtime.(*mspan).objIndex (inline)
+         0     0%   100%      0.01s  0.83%  runtime.addtimer
+         0     0%   100%      0.01s  0.83%  runtime.assertE2I2
+         0     0%   100%      0.01s  0.83%  runtime.assertI2I2
+         0     0%   100%      0.01s  0.83%  runtime.bgsweep
+         0     0%   100%      0.01s  0.83%  runtime.callers
+         0     0%   100%      0.01s  0.83%  runtime.callers.func1
+         0     0%   100%      0.02s  1.67%  runtime.chanrecv
+         0     0%   100%      0.02s  1.67%  runtime.chanrecv2
+         0     0%   100%      0.06s  5.00%  runtime.chansend
+         0     0%   100%      0.05s  4.17%  runtime.chansend1
+         0     0%   100%      0.04s  3.33%  runtime.entersyscall
+         0     0%   100%      0.04s  3.33%  runtime.entersyscall_sysmon
+         0     0%   100%      0.01s  0.83%  runtime.exitsyscall
+         0     0%   100%      0.01s  0.83%  runtime.fastrandn (inline)
+         0     0%   100%      0.24s 20.00%  runtime.findRunnable
+         0     0%   100%      0.01s  0.83%  runtime.funcspdelta
+         0     0%   100%      0.08s  6.67%  runtime.futexsleep
+         0     0%   100%      0.10s  8.33%  runtime.futexwakeup
+         0     0%   100%      0.04s  3.33%  runtime.gcBgMarkWorker
+         0     0%   100%      0.04s  3.33%  runtime.gcBgMarkWorker.func2
+         0     0%   100%      0.04s  3.33%  runtime.gcDrain
+         0     0%   100%      0.01s  0.83%  runtime.gentraceback
+         0     0%   100%      0.02s  1.67%  runtime.goexit0
+         0     0%   100%      0.06s  5.00%  runtime.goready
+         0     0%   100%      0.06s  5.00%  runtime.goready.func1
+         0     0%   100%      0.01s  0.83%  runtime.growslice
+         0     0%   100%      0.03s  2.50%  runtime.hashGrow
+         0     0%   100%      0.01s  0.83%  runtime.lock (inline)
+         0     0%   100%      0.02s  1.67%  runtime.lockWithRank (inline)
+         0     0%   100%      0.09s  7.50%  runtime.mPark (inline)
+         0     0%   100%      0.01s  0.83%  runtime.mProf_Malloc
+         0     0%   100%      0.01s  0.83%  runtime.makechan
+         0     0%   100%      0.03s  2.50%  runtime.mapassign_faststr
+         0     0%   100%      0.25s 20.83%  runtime.mcall
+         0     0%   100%      0.01s  0.83%  runtime.modtimer
+         0     0%   100%      0.02s  1.67%  runtime.mput
+         0     0%   100%      0.02s  1.67%  runtime.netpollBreak
+         0     0%   100%      0.01s  0.83%  runtime.newarray
+         0     0%   100%      0.06s  5.00%  runtime.newobject
+         0     0%   100%      0.01s  0.83%  runtime.newproc
+         0     0%   100%      0.01s  0.83%  runtime.newproc.func1
+         0     0%   100%      0.01s  0.83%  runtime.newproc1
+         0     0%   100%      0.10s  8.33%  runtime.notewakeup
+         0     0%   100%      0.23s 19.17%  runtime.park_m
+         0     0%   100%      0.01s  0.83%  runtime.profilealloc
+         0     0%   100%      0.06s  5.00%  runtime.ready
+         0     0%   100%      0.04s  3.33%  runtime.reentersyscall
+         0     0%   100%      0.01s  0.83%  runtime.resetspinning
+         0     0%   100%      0.01s  0.83%  runtime.resettimer (inline)
+         0     0%   100%      0.01s  0.83%  runtime.runqgrab
+         0     0%   100%      0.01s  0.83%  runtime.runqsteal
+         0     0%   100%      0.04s  3.33%  runtime.scanobject
+         0     0%   100%      0.25s 20.83%  runtime.schedule
+         0     0%   100%      0.01s  0.83%  runtime.selectnbsend
+         0     0%   100%      0.01s  0.83%  runtime.semrelease1
+         0     0%   100%      0.02s  1.67%  runtime.slicebytetostring
+         0     0%   100%      0.06s  5.00%  runtime.startm
+         0     0%   100%      0.11s  9.17%  runtime.stopm
+         0     0%   100%      0.01s  0.83%  runtime.sweepone
+         0     0%   100%      0.02s  1.67%  runtime.wakeNetPoller
+         0     0%   100%      0.06s  5.00%  runtime.wakep
+         0     0%   100%      0.02s  1.67%  runtime.write
+         0     0%   100%      0.06s  5.00%  runtime/internal/syscall.EpollWait
+         0     0%   100%      0.01s  0.83%  strconv.ParseFloat
+         0     0%   100%      0.01s  0.83%  strconv.atof64
+         0     0%   100%      0.01s  0.83%  strconv.parseFloatPrefix
+         0     0%   100%      0.01s  0.83%  strings.TrimRightFunc
+         0     0%   100%      0.01s  0.83%  strings.lastIndexFunc
+         0     0%   100%      0.01s  0.83%  sync.(*RWMutex).Lock
+         0     0%   100%      0.01s  0.83%  sync.(*RWMutex).RUnlock
+         0     0%   100%      0.01s  0.83%  sync.(*RWMutex).rUnlockSlow
+         0     0%   100%      0.01s  0.83%  sync.runtime_Semrelease
+         0     0%   100%      0.11s  9.17%  syscall.RawSyscall6
+         0     0%   100%      0.07s  5.83%  syscall.Read (inline)
+         0     0%   100%      0.16s 13.33%  syscall.Syscall
+         0     0%   100%      0.01s  0.83%  syscall.Write (inline)
+         0     0%   100%      0.07s  5.83%  syscall.read
+         0     0%   100%      0.01s  0.83%  syscall.write
+         0     0%   100%      0.01s  0.83%  time.(*Timer).Reset
+         0     0%   100%      0.01s  0.83%  time.NewTimer
+         0     0%   100%      0.01s  0.83%  time.resetTimer
+         0     0%   100%      0.01s  0.83%  time.startTimer
