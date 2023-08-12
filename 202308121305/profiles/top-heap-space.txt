@@ -1,0 +1,296 @@
+File: airs-bp
+Type: alloc_space
+Time: Aug 12, 2023 at 1:08pm (UTC)
+Showing nodes accounting for 619.23MB, 83.23% of 743.97MB total
+Dropped 449 nodes (cum <= 3.72MB)
+      flat  flat%   sum%        cum   cum%
+   97.78MB 13.14% 13.14%   112.78MB 15.16%  encoding/json.(*decodeState).objectInterface
+   64.52MB  8.67% 21.81%    90.02MB 12.10%  github.com/untillpro/dynobuffers.glob..func1
+   56.71MB  7.62% 29.44%    56.71MB  7.62%  io.ReadAll
+   32.56MB  4.38% 33.81%    32.56MB  4.38%  github.com/untillpro/dynobuffers.(*Buffer).prepareModifiedFields (inline)
+   31.98MB  4.30% 38.11%    39.02MB  5.24%  github.com/alecthomas/participle/v2/lexer.Upgrade
+   31.50MB  4.23% 42.35%    31.50MB  4.23%  github.com/google/flatbuffers/go.(*Builder).growByteBuffer (inline)
+   29.54MB  3.97% 46.32%    30.04MB  4.04%  github.com/alecthomas/participle/v2.newTagLexer
+   25.50MB  3.43% 49.75%    25.50MB  3.43%  github.com/google/flatbuffers/go.NewBuilder (inline)
+   12.50MB  1.68% 51.43%    12.50MB  1.68%  encoding/json.unquote (inline)
+      12MB  1.61% 53.04%       12MB  1.61%  github.com/gocql/gocql.newFramer (inline)
+   11.52MB  1.55% 54.59%    11.52MB  1.55%  bytes.growSlice
+   11.51MB  1.55% 56.13%    12.52MB  1.68%  github.com/gocql/gocql.(*framer).writeBytes (inline)
+      11MB  1.48% 57.61%       11MB  1.48%  github.com/alecthomas/participle/v2.(*parseContext).Branch (inline)
+      11MB  1.48% 59.09%       12MB  1.61%  github.com/voedger/voedger/pkg/istructsmem.(*keyType).Equals.func1
+       9MB  1.21% 60.30%    46.01MB  6.18%  github.com/voedger/voedger/pkg/istructsmem.newKey
+       9MB  1.21% 61.51%        9MB  1.21%  github.com/alecthomas/participle/v2.(*parseContext).Defer (inline)
+    8.50MB  1.14% 62.65%    45.51MB  6.12%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).build
+    8.50MB  1.14% 63.80%     8.50MB  1.14%  time.NewTimer
+    7.50MB  1.01% 64.81%     7.50MB  1.01%  reflect.mapassign_faststr
+    7.50MB  1.01% 65.81%     7.50MB  1.01%  github.com/voedger/voedger/pkg/pipeline.forkOperator.DoSync
+       6MB  0.81% 66.62%        6MB  0.81%  net/textproto.readMIMEHeader
+       6MB  0.81% 67.43%        6MB  0.81%  github.com/VictoriaMetrics/fastcache.(*bucket).Get
+       6MB  0.81% 68.23%     6.50MB  0.87%  github.com/gocql/gocql.(*queryMetrics).hostMetricsLocked
+    5.50MB  0.74% 68.97%     5.50MB  0.74%  strings.(*Builder).grow (inline)
+    5.50MB  0.74% 69.71%     5.50MB  0.74%  github.com/google/flatbuffers/go.(*Builder).StartObject (inline)
+    5.50MB  0.74% 70.45%    29.01MB  3.90%  github.com/voedger/voedger/pkg/istructsmem.newValue
+    5.50MB  0.74% 71.19%    20.51MB  2.76%  github.com/gocql/gocql.(*Conn).executeBatch
+    5.50MB  0.74% 71.93%     5.50MB  0.74%  reflect.New
+    5.50MB  0.74% 72.67%    17.02MB  2.29%  bytes.(*Buffer).grow
+    5.50MB  0.74% 73.41%     5.50MB  0.74%  github.com/voedger/voedger/pkg/istructsmem.(*validators).validKey
+       5MB  0.67% 74.08%     6.50MB  0.87%  github.com/voedger/voedger/pkg/istructsmem.(*keyType).storeViewClustKey
+       4MB  0.54% 74.62%    32.51MB  4.37%  github.com/alecthomas/participle/v2.(*sequence).Parse
+       4MB  0.54% 75.16%        4MB  0.54%  encoding/base64.(*Encoding).DecodeString
+       4MB  0.54% 75.69%    26.51MB  3.56%  github.com/voedger/voedger/pkg/istructsmem.(*appRecordsType).Get
+       4MB  0.54% 76.23%    34.02MB  4.57%  github.com/gocql/gocql.(*Conn).exec
+    3.07MB  0.41% 76.65%     5.57MB  0.75%  github.com/alecthomas/participle/v2.validate.func1
+       3MB   0.4% 77.05%    35.55MB  4.78%  github.com/voedger/voedger/pkg/istorageimpl/istoragecas.(*appStorageType).PutBatch
+    2.50MB  0.34% 77.38%    24.52MB  3.30%  github.com/gocql/gocql.(*Conn).executeQuery
+    2.50MB  0.34% 77.72%    39.51MB  5.31%  github.com/voedger/voedger/pkg/state.(*viewRecordsStorage).NewKeyBuilder
+    2.50MB  0.34% 78.06%   127.78MB 17.18%  encoding/json.(*decodeState).object
+    2.50MB  0.34% 78.39%        4MB  0.54%  github.com/voedger/voedger/pkg/projectors.(*asyncActualizer).readPlogToTheEnd2
+       2MB  0.27% 78.66%        9MB  1.21%  net/http.readRequest
+       2MB  0.27% 78.93%     7.50MB  1.01%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).ElementBuilder
+       2MB  0.27% 79.20%    70.22MB  9.44%  github.com/voedger/voedger/pkg/router.requestHandler.func1
+       2MB  0.27% 79.47%       33MB  4.44%  github.com/untillpro/airs-bp3/packages/air/dashboard.(*dashboardProjectorLogic).do
+       2MB  0.27% 79.74%        5MB  0.67%  github.com/voedger/voedger/pkg/state.implProvideQueryProcessorState
+       2MB  0.27% 80.01%     6.07MB  0.82%  github.com/alecthomas/participle/v2.visit
+    1.50MB   0.2% 80.21%    32.51MB  4.37%  github.com/alecthomas/participle/v2.(*group).Parse
+    1.50MB   0.2% 80.41%   120.78MB 16.23%  encoding/json.Unmarshal
+    1.50MB   0.2% 80.61%     5.50MB  0.74%  github.com/untillpro/ibusmem.(*bus).SendRequest2
+    1.50MB   0.2% 80.81%     4.03MB  0.54%  regexp.(*Regexp).doExecute
+       1MB  0.13% 80.95%       10MB  1.34%  net/http.(*conn).readRequest
+       1MB  0.13% 81.08%    45.50MB  6.12%  github.com/voedger/voedger/pkg/state.(*viewRecordsStorage).ApplyBatch
+       1MB  0.13% 81.22%    65.55MB  8.81%  github.com/alecthomas/participle/v2.(*generatorContext).parseCapture
+       1MB  0.13% 81.35%    49.51MB  6.65%  github.com/voedger/voedger/pkg/iauthnzimpl.(*implIAuthenticator).Authenticate
+       1MB  0.13% 81.48%     6.50MB  0.87%  github.com/voedger/voedger/pkg/istructsmem.CheckRefIntegrity
+       1MB  0.13% 81.62%       20MB  2.69%  github.com/golang-jwt/jwt.(*Parser).ParseUnverified
+       1MB  0.13% 81.75%     7.01MB  0.94%  github.com/gocql/gocql.(*Conn).recv
+       1MB  0.13% 81.89%     4.50MB   0.6%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).storeToBytes
+       1MB  0.13% 82.02%    15.50MB  2.08%  github.com/voedger/voedger/pkg/state.(*viewRecordsStorage).ProvideValueBuilder
+       1MB  0.13% 82.16%    11.01MB  1.48%  github.com/alecthomas/participle/v2.(*generatorContext).parseModifier
+       1MB  0.13% 82.29%    32.51MB  4.37%  github.com/alecthomas/participle/v2.(*strct).Parse
+       1MB  0.13% 82.43%     4.50MB   0.6%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).regenerateIDs.func2
+       1MB  0.13% 82.56%    12.52MB  1.68%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).PutNumber
+    0.50MB 0.068% 82.63%    65.55MB  8.81%  github.com/alecthomas/participle/v2.(*generatorContext).parseType
+    0.50MB 0.067% 82.69%    24.53MB  3.30%  github.com/voedger/voedger/pkg/istructsmem.(*cudType).Update
+    0.50MB 0.067% 82.76%    44.50MB  5.98%  github.com/voedger/voedger/pkg/istructsmem.(*appViewRecords).PutBatch
+    0.50MB 0.067% 82.83%       34MB  4.57%  github.com/untillpro/airs-bp3/packages/air/dashboard.glob..func1
+    0.50MB 0.067% 82.90%        7MB  0.94%  github.com/voedger/voedger/pkg/processors/query.implRowsProcessorFactory
+    0.50MB 0.067% 82.96%     6.50MB  0.87%  github.com/voedger/voedger/pkg/state.(*bundleImpl).put
+    0.50MB 0.067% 83.03%   105.77MB 14.22%  encoding/json.(*decodeState).valueInterface
+    0.50MB 0.067% 83.10%   105.77MB 14.22%  encoding/json.(*decodeState).arrayInterface
+    0.50MB 0.067% 83.17%    65.55MB  8.81%  github.com/alecthomas/participle/v2.(*generatorContext).parseDisjunction
+    0.50MB 0.067% 83.23%    18.53MB  2.49%  github.com/untillpro/airs-bp3/packages/air/edit.execCmdOrders
+         0     0% 83.23%    14.01MB  1.88%  bytes.(*Buffer).Write
+         0     0% 83.23%       12MB  1.61%  encoding/json.(*Decoder).Decode
+         0     0% 83.23%    13.53MB  1.82%  encoding/json.(*decodeState).array
+         0     0% 83.23%   127.78MB 17.18%  encoding/json.(*decodeState).unmarshal
+         0     0% 83.23%   127.78MB 17.18%  encoding/json.(*decodeState).value
+         0     0% 83.23%        6MB  0.81%  github.com/VictoriaMetrics/fastcache.(*Cache).HasGet
+         0     0% 83.23%    25.51MB  3.43%  github.com/alecthomas/participle/v2.(*Parser[...]).ParseFromLexer
+         0     0% 83.23%    34.01MB  4.57%  github.com/alecthomas/participle/v2.(*Parser[...]).ParseString
+         0     0% 83.23%    34.01MB  4.57%  github.com/alecthomas/participle/v2.(*Parser[...]).parse
+         0     0% 83.23%    26.51MB  3.56%  github.com/alecthomas/participle/v2.(*Parser[...]).parseInto
+         0     0% 83.23%    26.51MB  3.56%  github.com/alecthomas/participle/v2.(*Parser[...]).parseOne
+         0     0% 83.23%    32.51MB  4.37%  github.com/alecthomas/participle/v2.(*capture).Parse
+         0     0% 83.23%    32.01MB  4.30%  github.com/alecthomas/participle/v2.(*disjunction).Parse
+         0     0% 83.23%    20.01MB  2.69%  github.com/alecthomas/participle/v2.(*generatorContext).parseGroup
+         0     0% 83.23%    65.55MB  8.81%  github.com/alecthomas/participle/v2.(*generatorContext).parseSequence
+         0     0% 83.23%    65.55MB  8.81%  github.com/alecthomas/participle/v2.(*generatorContext).parseTerm
+         0     0% 83.23%    65.55MB  8.81%  github.com/alecthomas/participle/v2.(*generatorContext).parseTermNoModifiers
+         0     0% 83.23%    18.01MB  2.42%  github.com/alecthomas/participle/v2.(*generatorContext).subparseGroup
+         0     0% 83.23%    15.01MB  2.02%  github.com/alecthomas/participle/v2.(*structLexer).Next
+         0     0% 83.23%    45.54MB  6.12%  github.com/alecthomas/participle/v2.(*structLexer).Peek
+         0     0% 83.23%    22.52MB  3.03%  github.com/alecthomas/participle/v2.Build[...]
+         0     0% 83.23%    19.02MB  2.56%  github.com/alecthomas/participle/v2.MustBuild[...] (inline)
+         0     0% 83.23%     6.07MB  0.82%  github.com/alecthomas/participle/v2.visit.func1
+         0     0% 83.23%     5.50MB  0.74%  github.com/gocql/gocql.(*Batch).attempt
+         0     0% 83.23%    20.51MB  2.76%  github.com/gocql/gocql.(*Batch).execute
+         0     0% 83.23%     7.01MB  0.94%  github.com/gocql/gocql.(*Conn).serve
+         0     0% 83.23%    25.02MB  3.36%  github.com/gocql/gocql.(*Query).Exec
+         0     0% 83.23%    26.02MB  3.50%  github.com/gocql/gocql.(*Query).Iter
+         0     0% 83.23%    24.02MB  3.23%  github.com/gocql/gocql.(*Query).execute
+         0     0% 83.23%    27.01MB  3.63%  github.com/gocql/gocql.(*Session).ExecuteBatch
+         0     0% 83.23%    27.01MB  3.63%  github.com/gocql/gocql.(*Session).executeBatch
+         0     0% 83.23%    26.02MB  3.50%  github.com/gocql/gocql.(*Session).executeQuery
+         0     0% 83.23%    12.01MB  1.61%  github.com/gocql/gocql.(*framer).writeExecuteFrame
+         0     0% 83.23%    12.01MB  1.61%  github.com/gocql/gocql.(*framer).writeQueryParams
+         0     0% 83.23%    51.03MB  6.86%  github.com/gocql/gocql.(*queryExecutor).attemptQuery
+         0     0% 83.23%    51.03MB  6.86%  github.com/gocql/gocql.(*queryExecutor).do
+         0     0% 83.23%    53.03MB  7.13%  github.com/gocql/gocql.(*queryExecutor).executeQuery
+         0     0% 83.23%     6.50MB  0.87%  github.com/gocql/gocql.(*queryMetrics).attempt
+         0     0% 83.23%    12.01MB  1.61%  github.com/gocql/gocql.(*writeExecuteFrame).buildFrame
+         0     0% 83.23%    26.01MB  3.50%  github.com/golang-jwt/jwt.(*Parser).Parse (inline)
+         0     0% 83.23%    26.01MB  3.50%  github.com/golang-jwt/jwt.(*Parser).ParseWithClaims
+         0     0% 83.23%    26.01MB  3.50%  github.com/golang-jwt/jwt.Parse
+         0     0% 83.23%        4MB  0.54%  github.com/google/flatbuffers/go.(*Builder).CreateString
+         0     0% 83.23%       13MB  1.75%  github.com/google/flatbuffers/go.(*Builder).EndObject (inline)
+         0     0% 83.23%        9MB  1.21%  github.com/google/flatbuffers/go.(*Builder).Finish (inline)
+         0     0% 83.23%    31.50MB  4.23%  github.com/google/flatbuffers/go.(*Builder).Prep
+         0     0% 83.23%        5MB  0.67%  github.com/google/flatbuffers/go.(*Builder).PrependInt64
+         0     0% 83.23%    10.50MB  1.41%  github.com/google/flatbuffers/go.(*Builder).PrependVOffsetT
+         0     0% 83.23%       13MB  1.75%  github.com/google/flatbuffers/go.(*Builder).WriteVtable
+         0     0% 83.23%        9MB  1.21%  github.com/google/flatbuffers/go.(*Builder).finish
+         0     0% 83.23%    76.88MB 10.33%  github.com/gorilla/mux.(*Router).ServeHTTP
+         0     0% 83.23%    36.18MB  4.86%  github.com/untillpro/airs-bp3/airsbp3.buildVVM
+         0     0% 83.23%    34.50MB  4.64%  github.com/untillpro/airs-bp3/apps/untill/airsbp.ProvideAirsBP.func1
+         0     0% 83.23%     5.02MB  0.67%  github.com/untillpro/airs-bp3/packages/air.Provide
+         0     0% 83.23%        5MB  0.67%  github.com/untillpro/airs-bp3/packages/air/dashboard.(*articleService).isPromoArticle
+         0     0% 83.23%        5MB  0.67%  github.com/untillpro/airs-bp3/packages/air/dashboard.(*dashboardProjectorLogic).do.func3
+         0     0% 83.23%     4.50MB   0.6%  github.com/untillpro/airs-bp3/packages/air/dashboard.(*dashboardProjectorLogic).updateDailyOrders
+         0     0% 83.23%     4.50MB   0.6%  github.com/untillpro/airs-bp3/packages/air/dashboard.(*dashboardProjectorLogic).updateDailyPayments
+         0     0% 83.23%     8.50MB  1.14%  github.com/untillpro/airs-bp3/packages/air/dashboard.(*dashboardProjectorLogic).updateHourlySales
+         0     0% 83.23%    14.02MB  1.88%  github.com/untillpro/airs-bp3/packages/air/edit.execCmdPbill
+         0     0% 83.23%    11.50MB  1.55%  github.com/untillpro/airs-bp3/packages/air/tablesoverview.glob..func3
+         0     0% 83.23%    11.50MB  1.55%  github.com/untillpro/airs-bp3/packages/air/tablesoverview.glob..func3.1
+         0     0% 83.23%     7.50MB  1.01%  github.com/untillpro/airs-bp3/packages/air/tablesoverview.glob..func3.2
+         0     0% 83.23%       28MB  3.76%  github.com/untillpro/airs-bp3/packages/air/tablesoverview.glob..func4
+         0     0% 83.23%       28MB  3.76%  github.com/untillpro/airs-bp3/packages/air/tablesoverview.glob..func4.1
+         0     0% 83.23%    20.50MB  2.76%  github.com/untillpro/airs-bp3/packages/air/tablesoverview.glob..func4.2
+         0     0% 83.23%    25.47MB  3.42%  github.com/untillpro/airs-bp3/packages/untill.Provide (inline)
+         0     0% 83.23%    14.53MB  1.95%  github.com/untillpro/dynobuffers.(*Buffer).IterateFields
+         0     0% 83.23%    32.56MB  4.38%  github.com/untillpro/dynobuffers.(*Buffer).Set (inline)
+         0     0% 83.23%       37MB  4.97%  github.com/untillpro/dynobuffers.(*Buffer).ToBytes
+         0     0% 83.23%       37MB  4.97%  github.com/untillpro/dynobuffers.(*Buffer).ToBytesNilled
+         0     0% 83.23%       37MB  4.97%  github.com/untillpro/dynobuffers.(*Buffer).encodeBuffer
+         0     0% 83.23%     5.50MB  0.74%  github.com/untillpro/dynobuffers.(*Buffer).encodeBuffer.func1
+         0     0% 83.23%    32.56MB  4.38%  github.com/untillpro/dynobuffers.(*Buffer).set
+         0     0% 83.23%    90.02MB 12.10%  github.com/untillpro/dynobuffers.NewBuffer
+         0     0% 83.23%       11MB  1.48%  github.com/untillpro/dynobuffers.encodeFixedSizeValue
+         0     0% 83.23%    90.02MB 12.10%  github.com/untillpro/dynobuffers.getBuffer (inline)
+         0     0% 83.23%    11.50MB  1.55%  github.com/voedger/voedger/pkg/appdef.(*fields).Fields
+         0     0% 83.23%    51.02MB  6.86%  github.com/voedger/voedger/pkg/apps.Parse
+         0     0% 83.23%     6.02MB  0.81%  github.com/voedger/voedger/pkg/apps/sys/blobber.Provide.func1
+         0     0% 83.23%        4MB  0.54%  github.com/voedger/voedger/pkg/apps/sys/router.Provide.func1
+         0     0% 83.23%        4MB  0.54%  github.com/voedger/voedger/pkg/in10nmem.(*N10nBroker).WatchChannel
+         0     0% 83.23%     6.50MB  0.87%  github.com/voedger/voedger/pkg/istoragecache.(*cachedAppStorage).Get
+         0     0% 83.23%    28.52MB  3.83%  github.com/voedger/voedger/pkg/istoragecache.(*cachedAppStorage).Put
+         0     0% 83.23%    35.55MB  4.78%  github.com/voedger/voedger/pkg/istoragecache.(*cachedAppStorage).PutBatch
+         0     0% 83.23%     5.04MB  0.68%  github.com/voedger/voedger/pkg/istoragecache.(*implCachingAppStorageProvider).AppStorage
+         0     0% 83.23%     4.01MB  0.54%  github.com/voedger/voedger/pkg/istorageimpl.(*implIAppStorageProvider).AppStorage
+         0     0% 83.23%    27.52MB  3.70%  github.com/voedger/voedger/pkg/istorageimpl/istoragecas.(*appStorageType).Put
+         0     0% 83.23%     5.08MB  0.68%  github.com/voedger/voedger/pkg/istructsmem.(*AppConfigType).prepare
+         0     0% 83.23%     4.50MB  0.61%  github.com/voedger/voedger/pkg/istructsmem.(*appEventsType).GetNewRawEventBuilder
+         0     0% 83.23%    27.11MB  3.64%  github.com/voedger/voedger/pkg/istructsmem.(*appEventsType).PutPlog
+         0     0% 83.23%    17.51MB  2.35%  github.com/voedger/voedger/pkg/istructsmem.(*appEventsType).PutWlog
+         0     0% 83.23%       11MB  1.48%  github.com/voedger/voedger/pkg/istructsmem.(*appRecordsType).Apply
+         0     0% 83.23%       11MB  1.48%  github.com/voedger/voedger/pkg/istructsmem.(*appRecordsType).Apply2
+         0     0% 83.23%        8MB  1.08%  github.com/voedger/voedger/pkg/istructsmem.(*appRecordsType).GetSingleton
+         0     0% 83.23%     6.50MB  0.87%  github.com/voedger/voedger/pkg/istructsmem.(*appRecordsType).getRecord
+         0     0% 83.23%        9MB  1.21%  github.com/voedger/voedger/pkg/istructsmem.(*appRecordsType).putRecordsBatch
+         0     0% 83.23%     8.11MB  1.09%  github.com/voedger/voedger/pkg/istructsmem.(*appStructsProviderType).AppStructs
+         0     0% 83.23%    19.50MB  2.62%  github.com/voedger/voedger/pkg/istructsmem.(*appViewRecords).Get
+         0     0% 83.23%    46.01MB  6.18%  github.com/voedger/voedger/pkg/istructsmem.(*appViewRecords).KeyBuilder
+         0     0% 83.23%    14.50MB  1.95%  github.com/voedger/voedger/pkg/istructsmem.(*appViewRecords).NewValueBuilder
+         0     0% 83.23%    19.50MB  2.62%  github.com/voedger/voedger/pkg/istructsmem.(*appViewRecords).storeViewRecord
+         0     0% 83.23%    32.55MB  4.37%  github.com/voedger/voedger/pkg/istructsmem.(*commandFunction).Exec
+         0     0% 83.23%        7MB  0.94%  github.com/voedger/voedger/pkg/istructsmem.(*cudType).build
+         0     0% 83.23%    35.51MB  4.77%  github.com/voedger/voedger/pkg/istructsmem.(*cudType).enumRecs
+         0     0% 83.23%    10.50MB  1.41%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).Build
+         0     0% 83.23%        5MB  0.67%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).Elements
+         0     0% 83.23%       13MB  1.75%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).build
+         0     0% 83.23%       13MB  1.75%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).build.func1
+         0     0% 83.23%       15MB  2.02%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).forEach
+         0     0% 83.23%        5MB  0.67%  github.com/voedger/voedger/pkg/istructsmem.(*elementType).regenerateIDs
+         0     0% 83.23%     9.50MB  1.28%  github.com/voedger/voedger/pkg/istructsmem.(*eventType).BuildRawEvent
+         0     0% 83.23%    35.51MB  4.77%  github.com/voedger/voedger/pkg/istructsmem.(*eventType).CUDs
+         0     0% 83.23%        7MB  0.94%  github.com/voedger/voedger/pkg/istructsmem.(*eventType).build
+         0     0% 83.23%        6MB  0.81%  github.com/voedger/voedger/pkg/istructsmem.(*eventType).regenerateIDs
+         0     0% 83.23%     7.51MB  1.01%  github.com/voedger/voedger/pkg/istructsmem.(*eventType).storeToBytes
+         0     0% 83.23%    15.50MB  2.08%  github.com/voedger/voedger/pkg/istructsmem.(*keyType).Equals
+         0     0% 83.23%    13.50MB  1.81%  github.com/voedger/voedger/pkg/istructsmem.(*keyType).build
+         0     0% 83.23%     9.50MB  1.28%  github.com/voedger/voedger/pkg/istructsmem.(*keyType).storeToBytes
+         0     0% 83.23%     7.51MB  1.01%  github.com/voedger/voedger/pkg/istructsmem.(*queryFunction).Exec
+         0     0% 83.23%    22.53MB  3.03%  github.com/voedger/voedger/pkg/istructsmem.(*recordType).copyFrom (inline)
+         0     0% 83.23%     6.01MB  0.81%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).PutFloat64
+         0     0% 83.23%    25.03MB  3.36%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).copyFrom
+         0     0% 83.23%    14.03MB  1.89%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).copyFrom.func1
+         0     0% 83.23%       16MB  2.15%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).loadFromBytes
+         0     0% 83.23%    10.02MB  1.35%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).putValue
+         0     0% 83.23%    90.02MB 12.10%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).setDef
+         0     0% 83.23%    74.01MB  9.95%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).setQName
+         0     0% 83.23%       16MB  2.15%  github.com/voedger/voedger/pkg/istructsmem.(*rowType).setQNameID
+         0     0% 83.23%       10MB  1.34%  github.com/voedger/voedger/pkg/istructsmem.(*valueType).Build
+         0     0% 83.23%     5.50MB  0.74%  github.com/voedger/voedger/pkg/istructsmem.CheckRefIntegrity.func1
+         0     0% 83.23%    18.01MB  2.42%  github.com/voedger/voedger/pkg/istructsmem.FillElementFromJSON
+         0     0% 83.23%       16MB  2.15%  github.com/voedger/voedger/pkg/istructsmem.loadRow
+         0     0% 83.23%     4.50MB  0.61%  github.com/voedger/voedger/pkg/istructsmem.newEventBuilder (inline)
+         0     0% 83.23%     4.50MB  0.61%  github.com/voedger/voedger/pkg/istructsmem.newRawEventBuilder
+         0     0% 83.23%    24.03MB  3.23%  github.com/voedger/voedger/pkg/istructsmem.newUpdateRec
+         0     0% 83.23%     7.01MB  0.94%  github.com/voedger/voedger/pkg/istructsmem.storeElement
+         0     0% 83.23%     7.51MB  1.01%  github.com/voedger/voedger/pkg/istructsmem.storeEvent
+         0     0% 83.23%     7.01MB  0.94%  github.com/voedger/voedger/pkg/istructsmem.storeEventArguments
+         0     0% 83.23%     7.51MB  1.01%  github.com/voedger/voedger/pkg/istructsmem.storeRow
+         0     0% 83.23%     8.51MB  1.14%  github.com/voedger/voedger/pkg/istructsmem/internal/utils.SafeWriteBuf
+         0     0% 83.23%    29.51MB  3.97%  github.com/voedger/voedger/pkg/itokens-payloads.(*implIAppTokens).ValidateToken
+         0     0% 83.23%    29.51MB  3.97%  github.com/voedger/voedger/pkg/itokensjwt.(*JWTSigner).ValidateToken
+         0     0% 83.23%    52.02MB  6.99%  github.com/voedger/voedger/pkg/parser.ParseFile
+         0     0% 83.23%    54.53MB  7.33%  github.com/voedger/voedger/pkg/parser.parseImpl
+         0     0% 83.23%    65.01MB  8.74%  github.com/voedger/voedger/pkg/pipeline.(*WiredOperator).doAsync
+         0     0% 83.23%   456.68MB 61.38%  github.com/voedger/voedger/pkg/pipeline.(*WiredOperator).doSync
+         0     0% 83.23%   447.68MB 60.17%  github.com/voedger/voedger/pkg/pipeline.(*implISyncOperatorSimple).DoSync
+         0     0% 83.23%        8MB  1.08%  github.com/voedger/voedger/pkg/pipeline.(*serviceOperator).DoSync.func1
+         0     0% 83.23%       12MB  1.61%  github.com/voedger/voedger/pkg/pipeline.p_flush
+         0     0% 83.23%    77.01MB 10.35%  github.com/voedger/voedger/pkg/pipeline.puller_async
+         0     0% 83.23%   455.68MB 61.25%  github.com/voedger/voedger/pkg/pipeline.puller_sync
+         0     0% 83.23%    34.51MB  4.64%  github.com/voedger/voedger/pkg/processors/command.(*cmdProc).authenticate
+         0     0% 83.23%     4.50MB  0.61%  github.com/voedger/voedger/pkg/processors/command.(*cmdProc).getRawEventBuilder
+         0     0% 83.23%    27.11MB  3.64%  github.com/voedger/voedger/pkg/processors/command.(*cmdProc).putPLog
+         0     0% 83.23%        8MB  1.08%  github.com/voedger/voedger/pkg/processors/command.(*cmdProc).validate
+         0     0% 83.23%     4.01MB  0.54%  github.com/voedger/voedger/pkg/processors/command.(*cmdProc).writeCUDs
+         0     0% 83.23%        4MB  0.54%  github.com/voedger/voedger/pkg/processors/command.(*opSendResponse).DoSync
+         0     0% 83.23%       11MB  1.48%  github.com/voedger/voedger/pkg/processors/command.applyPLogEvent
+         0     0% 83.23%     9.50MB  1.28%  github.com/voedger/voedger/pkg/processors/command.buildRawEvent
+         0     0% 83.23%    32.55MB  4.37%  github.com/voedger/voedger/pkg/processors/command.execCommand
+         0     0% 83.23%    28.51MB  3.83%  github.com/voedger/voedger/pkg/processors/command.getArgsObject
+         0     0% 83.23%    17.51MB  2.35%  github.com/voedger/voedger/pkg/processors/command.putWLog
+         0     0% 83.23%   113.28MB 15.23%  github.com/voedger/voedger/pkg/processors/command.unmarshalRequestBody
+         0     0% 83.23%        7MB  0.94%  github.com/voedger/voedger/pkg/processors/query.newQueryProcessorPipeline.func13
+         0     0% 83.23%     7.51MB  1.01%  github.com/voedger/voedger/pkg/processors/query.newQueryProcessorPipeline.func14
+         0     0% 83.23%       15MB  2.02%  github.com/voedger/voedger/pkg/processors/query.newQueryProcessorPipeline.func3
+         0     0% 83.23%        5MB  0.67%  github.com/voedger/voedger/pkg/processors/query.newQueryProcessorPipeline.func9
+         0     0% 83.23%    38.51MB  5.18%  github.com/voedger/voedger/pkg/processors/query.operator.func1
+         0     0% 83.23%     5.50MB  0.74%  github.com/voedger/voedger/pkg/projectors.(*asyncActualizer).Run
+         0     0% 83.23%     4.50MB   0.6%  github.com/voedger/voedger/pkg/projectors.(*asyncActualizer).keepReading
+         0     0% 83.23%        4MB  0.54%  github.com/voedger/voedger/pkg/projectors.(*asyncActualizer).keepReading.func1
+         0     0% 83.23%    63.01MB  8.47%  github.com/voedger/voedger/pkg/projectors.(*asyncProjector).DoAsync
+         0     0% 83.23%       12MB  1.61%  github.com/voedger/voedger/pkg/projectors.(*asyncProjector).Flush
+         0     0% 83.23%       12MB  1.61%  github.com/voedger/voedger/pkg/projectors.(*asyncProjector).flush
+         0     0% 83.23%    41.01MB  5.51%  github.com/voedger/voedger/pkg/projectors.newSyncBranch.func1
+         0     0% 83.23%    36.50MB  4.91%  github.com/voedger/voedger/pkg/projectors.syncActualizerFactory.func3
+         0     0% 83.23%    72.22MB  9.71%  github.com/voedger/voedger/pkg/router.corsHandler.func1
+         0     0% 83.23%    57.21MB  7.69%  github.com/voedger/voedger/pkg/router.createRequest
+         0     0% 83.23%     9.50MB  1.28%  github.com/voedger/voedger/pkg/state.(*bundleImpl).get
+         0     0% 83.23%     6.50MB  0.87%  github.com/voedger/voedger/pkg/state.(*bundledHostState).ApplyIntents
+         0     0% 83.23%       26MB  3.50%  github.com/voedger/voedger/pkg/state.(*bundledHostState).CanExist
+         0     0% 83.23%       10MB  1.34%  github.com/voedger/voedger/pkg/state.(*bundledHostState).FlushBundles
+         0     0% 83.23%    36.50MB  4.91%  github.com/voedger/voedger/pkg/state.(*hostState).ApplyIntents
+         0     0% 83.23%    24.50MB  3.29%  github.com/voedger/voedger/pkg/state.(*hostState).CanExist
+         0     0% 83.23%    40.01MB  5.38%  github.com/voedger/voedger/pkg/state.(*hostState).KeyBuilder
+         0     0% 83.23%        7MB  0.94%  github.com/voedger/voedger/pkg/state.(*hostState).MustExist
+         0     0% 83.23%    15.50MB  2.08%  github.com/voedger/voedger/pkg/state.(*hostState).NewValue
+         0     0% 83.23%    24.53MB  3.30%  github.com/voedger/voedger/pkg/state.(*hostState).UpdateValue
+         0     0% 83.23%       12MB  1.61%  github.com/voedger/voedger/pkg/state.(*recordsStorage).Get
+         0     0% 83.23%    24.53MB  3.30%  github.com/voedger/voedger/pkg/state.(*recordsStorage).ProvideValueBuilderForUpdate
+         0     0% 83.23%     6.01MB  0.81%  github.com/voedger/voedger/pkg/state.(*recordsValueBuilder).PutFloat64
+         0     0% 83.23%    15.50MB  2.08%  github.com/voedger/voedger/pkg/state.(*viewRecordsKeyBuilder).Equals
+         0     0% 83.23%    12.50MB  1.68%  github.com/voedger/voedger/pkg/state.(*viewRecordsStorage).Get
+         0     0% 83.23%       10MB  1.34%  github.com/voedger/voedger/pkg/state.(*viewRecordsValueBuilder).Build (inline)
+         0     0% 83.23%       10MB  1.34%  github.com/voedger/voedger/pkg/state.(*viewRecordsValueBuilder).BuildValue
+         0     0% 83.23%    19.03MB  2.56%  github.com/voedger/voedger/pkg/sys.Provide
+         0     0% 83.23%     4.51MB  0.61%  github.com/voedger/voedger/pkg/sys/authnz/workspace.Provide
+         0     0% 83.23%     6.50MB  0.87%  github.com/voedger/voedger/pkg/sys/authnz/workspace.qcwbnQryExec
+         0     0% 83.23%     4.50MB  0.61%  github.com/voedger/voedger/pkg/sys/blobber.ProvideBlobberCmds
+         0     0% 83.23%       14MB  1.88%  github.com/voedger/voedger/pkg/sys/journal.glob..func1
+         0     0% 83.23%    50.18MB  6.75%  github.com/voedger/voedger/pkg/vvm.ProvideCluster
+         0     0% 83.23%    41.18MB  5.54%  github.com/voedger/voedger/pkg/vvm.ProvideVVM
+         0     0% 83.23%    40.52MB  5.45%  github.com/voedger/voedger/pkg/vvm.VVMAppsBuilder.Build
+         0     0% 83.23%     6.61MB  0.89%  github.com/voedger/voedger/pkg/vvm.provideAppsWSAmounts
+         0     0% 83.23%        4MB  0.54%  github.com/voedger/voedger/pkg/vvm.provideIBus.func1
+         0     0% 83.23%    12.50MB  1.68%  github.com/voedger/voedger/pkg/vvm.provideSubjectGetterFunc.func1
+         0     0% 83.23%    39.52MB  5.31%  github.com/voedger/voedger/pkg/vvm.provideVVMApps (inline)
+         0     0% 83.23%    87.38MB 11.75%  net/http.(*conn).serve
+         0     0% 83.23%    73.88MB  9.93%  net/http.HandlerFunc.ServeHTTP
+         0     0% 83.23%    77.38MB 10.40%  net/http.serverHandler.ServeHTTP
+         0     0% 83.23%        6MB  0.81%  net/textproto.(*Reader).ReadMIMEHeader (inline)
+         0     0% 83.23%     7.50MB  1.01%  reflect.Value.SetMapIndex
+         0     0% 83.23%     4.03MB  0.54%  regexp.(*Regexp).FindStringSubmatchIndex
+         0     0% 83.23%     5.50MB  0.74%  strings.(*Builder).Grow (inline)
+         0     0% 83.23%    92.52MB 12.44%  sync.(*Pool).Get
