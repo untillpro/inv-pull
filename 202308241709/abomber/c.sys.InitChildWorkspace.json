@@ -1,0 +1,14 @@
+{
+	"LatencyMin": 58.37,
+	"LatencyMax": 58.37,
+	"LatencyAvg": 58.37,
+	"Latency50": 58.37,
+	"Latency75": 58.37,
+	"Latency90": 58.37,
+	"Latency95": 58.37,
+	"Latency99": 58.37,
+	"NumOperations": 1,
+	"HTTPCodes": {
+		"200": 1
+	}
+}

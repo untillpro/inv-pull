@@ -1,0 +1,7 @@
++ echo 'Commit and push /root/tmp/inv-pull/202308241709 to git...'
+Commit and push /root/tmp/inv-pull/202308241709 to git...
++ git -C /root/tmp/inv-pull pull
+From https://github.com/untillpro/inv-pull
+   f75b4dd..6cf4bc5  main       -> origin/main
+Already up to date.
++ git -C /root/tmp/inv-pull add /root/tmp/inv-pull/202308241709
