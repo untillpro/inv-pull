@@ -1,0 +1,159 @@
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+130 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+131 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+132 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+133 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+134 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+135 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+136 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+137 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+138 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+139 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+140 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+141 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+142 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+143 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+144 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+145 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+146 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+147 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+148 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+149 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+150 print_arguments /root/air-devops_gmp/perftest/docker/perftest.sh
+152 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+171 write_scripts_sources_commit /root/air-devops_gmp/perftest/docker/perftest.sh
+174 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+178 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+77 on_SIGINT /root/air-devops_gmp/perftest/docker/perftest.sh
+1 utils_ssh /root/air-devops_gmp/perftest/docker/utils.sh
+103 utils_keyspaces_drop /root/air-devops_gmp/perftest/docker/utils.sh
+179 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Interrupted, see /root/tmp/inv-pull/202308241756/bash.log for the progress
+Stack:
+78 on_SIGINT /root/air-devops_gmp/perftest/docker/perftest.sh
+1 utils_ssh /root/air-devops_gmp/perftest/docker/utils.sh
+103 utils_keyspaces_drop /root/air-devops_gmp/perftest/docker/utils.sh
+179 main /root/air-devops_gmp/perftest/docker/perftest.sh
+ Error happened, see /root/tmp/inv-pull/202308241756/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+143 utils_log /root/air-devops_gmp/perftest/docker/utils.sh
+99 on_EXIT /root/air-devops_gmp/perftest/docker/perftest.sh
+1 utils_ssh /root/air-devops_gmp/perftest/docker/utils.sh
+103 utils_keyspaces_drop /root/air-devops_gmp/perftest/docker/utils.sh
+179 main /root/air-devops_gmp/perftest/docker/perftest.sh
