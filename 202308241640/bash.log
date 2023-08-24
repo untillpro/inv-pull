@@ -1,0 +1,155 @@
+Set up traps...
+ssh-agent started  and private key present.
+Recreate keyspaces for Air...
+Wait for Scylla to start on DBNode1...
+3
+Scylla cluster ready
+Create keyspaces...
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.0-70-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Aug 24 04:40:48 PM UTC 2023
+
+  System load:              0.4384765625
+  Usage of /:               74.4% of 149.92GB
+  Memory usage:             93%
+  Swap usage:               0%
+  Processes:                157
+  Users logged in:          0
+  IPv4 address for docker0: 172.17.0.1
+  IPv4 address for enp7s0:  10.0.0.2
+  IPv4 address for eth0:    49.13.16.214
+  IPv6 address for eth0:    2a01:4f8:c012:4d0c::1
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+54 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+*** System restart required ***
+Drop scylla snapshots to clear not used disk space...
+Clearing snapshots on Node: DBNode1
+Requested clearing snapshot(s) for [all keyspaces]
+Clearing snapshots on Node: DBNode2
+Requested clearing snapshot(s) for [all keyspaces]
+Clearing snapshots on Node: DBNode3
+Requested clearing snapshot(s) for [all keyspaces]
+Drop airc-backoffice2 container...
+bo-alpha
+bo-alpha
+bo-alpha
+Container bo-alpha removed remotely.
+Update airc-backoffice2 image...
+alpha: Pulling from untillpro/airc-backoffice2
+7264a8db6415: Already exists
+3a753be56661: Already exists
+f3063829fa47: Already exists
+90fa5aa417ca: Already exists
+bc66f7a3f388: Already exists
+52972a58b96d: Already exists
+1af8c8d8877f: Already exists
+483e4ad92080: Already exists
+5835aa0ead17: Pulling fs layer
+d2e861b5ea41: Pulling fs layer
+9dcb5b6d7654: Pulling fs layer
+5d7c0b4cd30f: Pulling fs layer
+1bbdde51461f: Pulling fs layer
+5d7c0b4cd30f: Waiting
+1bbdde51461f: Waiting
+9dcb5b6d7654: Verifying Checksum
+9dcb5b6d7654: Download complete
+d2e861b5ea41: Verifying Checksum
+d2e861b5ea41: Download complete
+5835aa0ead17: Verifying Checksum
+5835aa0ead17: Download complete
+5835aa0ead17: Pull complete
+1bbdde51461f: Verifying Checksum
+1bbdde51461f: Download complete
+d2e861b5ea41: Pull complete
+9dcb5b6d7654: Pull complete
+5d7c0b4cd30f: Download complete
+5d7c0b4cd30f: Pull complete
+1bbdde51461f: Pull complete
+Digest: sha256:b41015997f9003b2675c70ae597873c502b2fe416147b412e82cd8cb5aec9d13
+Status: Downloaded newer image for untillpro/airc-backoffice2:alpha
+docker.io/untillpro/airc-backoffice2:alpha
+Deploy airc-backoffice2 image...
+3cc7923bd42cd4cc3f58fdf6f3ac0529493f94f9b954692de941d8e002e3eeb9
+Drop airs-bp container...
+airs-bp
+airs-bp
+airs-bp
+Container airs-bp removed remotely.
+pkill airs-bp process...
+Copy secrets...
+Prepare and run airs-bp container...
+Update airs-bp image...
+alpha: Pulling from untillpro/airs-bp
+b237fe92c417: Already exists
+f0cb81768486: Pulling fs layer
+3f5a96e094d9: Pulling fs layer
+04f33f9695b6: Pulling fs layer
+ab9bd7d10b91: Pulling fs layer
+c4a27ed712e9: Pulling fs layer
+ab9bd7d10b91: Waiting
+c4a27ed712e9: Waiting
+04f33f9695b6: Verifying Checksum
+04f33f9695b6: Download complete
+f0cb81768486: Verifying Checksum
+f0cb81768486: Download complete
+3f5a96e094d9: Verifying Checksum
+3f5a96e094d9: Download complete
+ab9bd7d10b91: Download complete
+f0cb81768486: Pull complete
+c4a27ed712e9: Download complete
+3f5a96e094d9: Pull complete
+04f33f9695b6: Pull complete
+ab9bd7d10b91: Pull complete
+c4a27ed712e9: Pull complete
+Digest: sha256:bfa0ded9afa945a9eff761944abebb82c11408854636acec1b2303e55ed59b21
+Status: Downloaded newer image for untillpro/airs-bp:alpha
+docker.io/untillpro/airs-bp:alpha
+Deploy airs-bp container image...
+0a6b7e40bf20fecc173417297aba289cd85120da9545516e920e37134106d301
+airs-bp started, wait for airs-bp initialization..
+Still wait for Air initialization..
+Still wait for Air initialization..
+Still wait for Air initialization..
+Air initialization success
+Air service is up!
+Get secretKeyJWT from AppNode service...
+Secret key installed with success.
+Drop abomber container...
+Container abomber not found locally.
+pkill abomber executable...
+Update abomber container image...
+alpha: Pulling from untillpro/abomber
+Digest: sha256:b1f83b29cedbd5014ca92ac3b76eae2e45f7e8dd48c4f484d1edf92b589f8a28
+Status: Image is up to date for untillpro/abomber:alpha
+docker.io/untillpro/abomber:alpha
+Prepare result folders...
+Save airs-bp version...
+Save scylla.yaml...
+Iterate over Scylla nodes and store dc configs...
+abomber init, using container...
+Fork wait_and_get_profiles...
+Sleep 1m...
+abomber sales, using container...
+Get debug info.
+profile
+08/24 16:43:39.716: ===: [main.salesGoroutine:107]: sales created in workspace 140737488486400 for day 0
+Save and process profiles...
+Performance test is done
+Ref. git.log for details about commit and push
