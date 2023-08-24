@@ -1,0 +1,125 @@
+08/24 18:12.326 Set up traps...
+ssh-agent started  and private key present.
+08/24 18:12.330 Arguments:
+08/24 18:12.334   env_LOGNAME=root
+08/24 18:12.338   env_RESULTS_FOLDER=/root/tmp/inv-pull
+08/24 18:12.341   env_NUMLOGINS=1
+08/24 18:12.345   env_QP=1
+08/24 18:12.349   env_CP=1
+08/24 18:12.352   env_DC=dc1
+08/24 18:12.357   env_DURATION=2m
+08/24 18:12.361   env_OPERDAY=2000
+08/24 18:12.365   env_SOURCES_FOLDER=/root/sources
+08/24 18:12.369   env_BP3_COMMIT=
+08/24 18:12.373   env_ABOMBER_COMMIT=
+08/24 18:12.376   const_RESULT_FOLDER=/root/tmp/inv-pull/202308241812
+08/24 18:12.380   parent_of_RESULT_FOLDER=/root/tmp/inv-pull
+08/24 18:12.384   const_ERROR_FILE=/root/tmp/inv-pull/202308241812/error.txt
+08/24 18:12.388   const_STDOUT_FILE=/root/tmp/inv-pull/202308241812/bash.log
+08/24 18:12.392   const_SCYLLA_NODES=DBNode1,DBNode2,DBNode3
+08/24 18:12.397   const_BP_NODE=AppNode
+08/24 18:12.401   const_BP3_EXEC_IMAGE_NAME=airs-bp
+08/24 18:12.405   const_BP3_LOG=airs-bp_log.txt
+08/24 18:12.408   const_ABOMBER_EXEC_IMAGE=abomber
+08/24 18:12.442 Recreate keyspaces for Air...
+Wait for Scylla to start on DBNode1...
+3
+Scylla cluster ready
+Create keyspaces...
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.0-70-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Aug 24 06:12:32 PM UTC 2023
+
+  System load:              0.3408203125
+  Usage of /:               55.0% of 149.92GB
+  Memory usage:             93%
+  Swap usage:               0%
+  Processes:                158
+  Users logged in:          0
+  IPv4 address for docker0: 172.17.0.1
+  IPv4 address for enp7s0:  10.0.0.2
+  IPv4 address for eth0:    49.13.16.214
+  IPv6 address for eth0:    2a01:4f8:c012:4d0c::1
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+54 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+*** System restart required ***
+08/24 18:12.317 Drop scylla snapshots to clear not used disk space...
+Clearing snapshots on Node: DBNode1
+Requested clearing snapshot(s) for [all keyspaces]
+Clearing snapshots on Node: DBNode2
+Requested clearing snapshot(s) for [all keyspaces]
+Clearing snapshots on Node: DBNode3
+Requested clearing snapshot(s) for [all keyspaces]
+08/24 18:12.429 Drop airc-backoffice2 container...
+bo-alpha
+bo-alpha
+bo-alpha
+Container bo-alpha removed remotely.
+08/24 18:12.185 Update airc-backoffice2 image...
+alpha: Pulling from untillpro/airc-backoffice2
+Digest: sha256:b41015997f9003b2675c70ae597873c502b2fe416147b412e82cd8cb5aec9d13
+Status: Image is up to date for untillpro/airc-backoffice2:alpha
+docker.io/untillpro/airc-backoffice2:alpha
+08/24 18:12.405 Deploy airc-backoffice2 image...
+96bd37a554e93a6f925a09b0cb284aabdd199a2a786a81aa31788c16589979be
+08/24 18:12.063 Drop airs-bp container...
+airs-bp
+airs-bp
+airs-bp
+Container airs-bp removed remotely.
+08/24 18:12.058 pkill airs-bp process...
+08/24 18:12.350 Copy secrets...
+08/24 18:12.642 Prepare and run airs-bp container...
+08/24 18:12.646 Update airs-bp image...
+alpha: Pulling from untillpro/airs-bp
+Digest: sha256:bfa0ded9afa945a9eff761944abebb82c11408854636acec1b2303e55ed59b21
+Status: Image is up to date for untillpro/airs-bp:alpha
+docker.io/untillpro/airs-bp:alpha
+08/24 18:12.865 Deploy airs-bp container image...
+7d36b282e45cbcc9d3f68d36ae8d346f3b484ef1a5201cf574d763cfa4697b5b
+08/24 18:12.313 airs-bp started, wait for airs-bp initialization..
+08/24 18:12.334 Still wait for Air initialization..
+08/24 18:12.360 Still wait for Air initialization..
+08/24 18:13.385 Still wait for Air initialization..
+08/24 18:13.411 Air initialization success
+08/24 18:13.415 Air service is up!
+08/24 18:13.419 Get secretKeyJWT from AppNode service...
+08/24 18:13.862 Secret key installed with success.
+08/24 18:13.865 Drop abomber container...
+Container abomber not found locally.
+08/24 18:13.963 pkill abomber executable...
+08/24 18:13.979 Update abomber container image...
+alpha: Pulling from untillpro/abomber
+Digest: sha256:b1f83b29cedbd5014ca92ac3b76eae2e45f7e8dd48c4f484d1edf92b589f8a28
+Status: Image is up to date for untillpro/abomber:alpha
+docker.io/untillpro/abomber:alpha
+08/24 18:13.004 Prepare result folders...
+08/24 18:13.012 Save airs-bp version...
+08/24 18:13.305 Save scylla.yaml...
+08/24 18:13.684 Iterate over Scylla nodes and store dc configs...
+08/24 18:13.124 abomber init, using container...
+08/24 18:13.905 Fork wait_and_get_profiles...
+08/24 18:13.909 Sleep 1m...
+08/24 18:13.910 abomber sales, using container...
+08/24 18:14.915 Get debug info.
+08/24 18:14.992 profile
+08/24 18:15.266 Save and process profiles...
+08/24 18:15.461 Performance test is done
+08/24 18:15.464 Ref. git.log for details about commit and push
