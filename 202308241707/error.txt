@@ -1,0 +1,5 @@
+Error happened, see /root/tmp/inv-pull/202308241707/bash.log for details
+Stack:
+84 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+298 abomber_init /root/air-devops_gmp/perftest/docker/perftest.sh
+304 main /root/air-devops_gmp/perftest/docker/perftest.sh
