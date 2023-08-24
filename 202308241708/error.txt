@@ -1,0 +1,6 @@
+Interrupted, see /root/tmp/inv-pull/202308241708/bash.log for the progress
+Stack:
+78 on_SIGINT /root/air-devops_gmp/perftest/docker/perftest.sh
+1 utils_ssh /root/air-devops_gmp/perftest/docker/utils.sh
+187 build_and_run_airs-bp /root/air-devops_gmp/perftest/docker/perftest.sh
+233 main /root/air-devops_gmp/perftest/docker/perftest.sh
