@@ -1,0 +1,9 @@
+{
+	"BombingDuration": 120040,
+	"NumOperations": 3741,
+	"HTTPCodes": {
+		"200": 3741
+	},
+	"Ops": 31.16,
+	"Days": 1
+}

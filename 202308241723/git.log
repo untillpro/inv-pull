@@ -1,0 +1,5 @@
++ echo 'Commit and push /root/tmp/inv-pull/202308241723 to git...'
+Commit and push /root/tmp/inv-pull/202308241723 to git...
++ git -C /root/tmp/inv-pull pull
+Already up to date.
++ git -C /root/tmp/inv-pull add /root/tmp/inv-pull/202308241723
