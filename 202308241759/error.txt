@@ -1,0 +1,5 @@
+Error happened, see /root/tmp/inv-pull/202308241759/bash.log for details
+Stack:
+84 on_ERR /root/air-devops/perftest/docker/perftest.sh
+341 abomber_sales /root/air-devops/perftest/docker/perftest.sh
+347 main /root/air-devops/perftest/docker/perftest.sh
