@@ -1,0 +1,6 @@
+2023/08/26 19:00.335 Error happened, see /root/tmp/inv-pull/202308261900/bash.log for details
+Stack:
+86 on_ERR /root/air-devops_gmp/perftest/docker/perftest.sh
+23 utils_ssh /root/air-devops_gmp/perftest/docker/utils.sh
+52 utils_drop_container /root/air-devops_gmp/perftest/docker/utils.sh
+189 main /root/air-devops_gmp/perftest/docker/perftest.sh
