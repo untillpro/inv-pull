@@ -1,0 +1,131 @@
+2023/08/26 19:12.117 Set up traps...
+ssh-agent started  and private key present.
+2023/08/26 19:12.119 Environment:
+  env_LOGNAME=root
+  env_RESULTS_FOLDER=/root/tmp/inv-pull
+  env_NUMLOGINS=1
+  env_QP=1
+  env_CP=1
+  env_DC=dc1
+  env_DURATION=2m
+  env_OPERDAY=2000
+  env_SOURCES_FOLDER=/root/sources
+  env_BP3_COMMIT=
+  env_BP3_REPO=https://github.com/untillpro/airs-bp3
+  env_ABOMBER_COMMIT=5a9154bd98ab160f5c87e988fd2572d50ca4766c
+  env_ABOMBER_REPO=https://github.com/maxim-ge/air-devops
+  const_RESULT_FOLDER=/root/tmp/inv-pull/202308261912
+  parent_of_RESULT_FOLDER=/root/tmp/inv-pull
+  const_ERROR_FILE=/root/tmp/inv-pull/202308261912/error.txt
+  const_STDOUT_FILE=/root/tmp/inv-pull/202308261912/bash.log
+  const_SCYLLA_NODES=DBNode1,DBNode2,DBNode3
+  const_BP_NODE=AppNode
+  const_BP3_EXEC_IMAGE_NAME=airs-bp
+  const_BP3_LOG=airs-bp_log.txt
+  const_ABOMBER_EXEC_IMAGE=abomber
+2023/08/26 19:12.139 Recreate keyspaces for Air...
+Wait for Scylla to start on DBNode1...
+3
+Scylla cluster ready
+Create keyspaces...
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.0-70-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Aug 26 07:12:33 PM UTC 2023
+
+  System load:              0.30908203125
+  Usage of /:               55.1% of 149.92GB
+  Memory usage:             93%
+  Swap usage:               0%
+  Processes:                156
+  Users logged in:          0
+  IPv4 address for docker0: 172.17.0.1
+  IPv4 address for enp7s0:  10.0.0.2
+  IPv4 address for eth0:    49.13.16.214
+  IPv6 address for eth0:    2a01:4f8:c012:4d0c::1
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+60 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+*** System restart required ***
+2023/08/26 19:12.510 Drop scylla snapshots to clear not used disk space...
+Clearing snapshots on Node: DBNode1
+Requested clearing snapshot(s) for [all keyspaces]
+Clearing snapshots on Node: DBNode2
+Requested clearing snapshot(s) for [all keyspaces]
+Clearing snapshots on Node: DBNode3
+Requested clearing snapshot(s) for [all keyspaces]
+2023/08/26 19:12.546 Drop airc-backoffice2 container...
+bo-alpha
+bo-alpha
+bo-alpha
+Container bo-alpha removed remotely.
+2023/08/26 19:12.336 Update airc-backoffice2 image...
+alpha: Pulling from untillpro/airc-backoffice2
+Digest: sha256:b41015997f9003b2675c70ae597873c502b2fe416147b412e82cd8cb5aec9d13
+Status: Image is up to date for untillpro/airc-backoffice2:alpha
+docker.io/untillpro/airc-backoffice2:alpha
+2023/08/26 19:12.556 Deploy airc-backoffice2 image...
+e66cad0947318e6f75fa722d7f31e24fcac99ae677277f6bf0c92d9279b9053c
+2023/08/26 19:12.213 Drop airs-bp container...
+airs-bp
+airs-bp
+airs-bp
+Container airs-bp removed remotely.
+2023/08/26 19:12.219 pkill airs-bp process...
+2023/08/26 19:12.497 Copy secrets...
+2023/08/26 19:12.774 Prepare and run airs-bp container...
+2023/08/26 19:12.777 Update airs-bp image...
+alpha: Pulling from untillpro/airs-bp
+Digest: sha256:0dadee8ceb2722a5b2b0bdd4bc38c6c1f48fa64d7431cdc572cef7f05ede77bc
+Status: Image is up to date for untillpro/airs-bp:alpha
+docker.io/untillpro/airs-bp:alpha
+2023/08/26 19:12.012 Deploy airs-bp container image...
+b083578759742a89690207882cae5971fbd5d896fe1b8873c48c1fd00db932f2
+2023/08/26 19:12.495 airs-bp started, wait for airs-bp initialization..
+2023/08/26 19:12.517 Still wait for Air initialization..
+2023/08/26 19:12.541 Still wait for Air initialization..
+2023/08/26 19:13.564 Still wait for Air initialization..
+2023/08/26 19:13.590 Air initialization success
+2023/08/26 19:13.594 Air service is up!
+2023/08/26 19:13.598 Get secretKeyJWT from AppNode service...
+2023/08/26 19:13.045 Secret key installed with success.
+2023/08/26 19:13.048 Drop abomber container...
+Container abomber not found locally.
+2023/08/26 19:13.150 pkill abomber executable...
+2023/08/26 19:13.165 Build abomber from sources, commit=5a9154bd98ab160f5c87e988fd2572d50ca4766c...
+REPO_CLONE_FOLDER=/root/sources/github.com/maxim-ge
+The folder /root/sources/github.com/maxim-ge does not exist. Creating...
+Repository https://github.com/maxim-ge/air-devops not cloned. Cloning now...
+Cloning into 'air-devops'...
+HEAD is now at 3443c07 Update perftest-runner.sh, export NUMLOGINS=75
+Checking out commit 5a9154bd98ab160f5c87e988fd2572d50ca4766c...
+HEAD is now at 5a9154b Update perftest-runner.sh
+The executable abomber has been created in /root/sources
+2023/08/26 19:13.778 Prepare result folders...
+2023/08/26 19:13.783 Save airs-bp version...
+2023/08/26 19:13.060 Save scylla.yaml...
+2023/08/26 19:13.448 Iterate over Scylla nodes and store dc configs...
+2023/08/26 19:13.898 abomber init, using executable...
+2023/08/26 19:13.957 Fork wait_and_get_profiles...
+2023/08/26 19:13.962 Sleep 1m...
+2023/08/26 19:13.963 abomber sales, using executable...
+2023/08/26 19:14.970 Get debug info.
+2023/08/26 19:14.998 profile
+2023/08/26 19:15.076 Save and process profiles...
+2023/08/26 19:15.278 Performance test is done
+2023/08/26 19:15.281 Ref. git.log for details about commit and push
