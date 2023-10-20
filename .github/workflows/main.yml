@@ -1,33 +1,23 @@
-name: "Issue Comment Handler"
+name: 'Hello Comment Response'
 
 on:
   issue_comment:
     types: [created]
 
 jobs:
-  commentHandler:
+  commentReply:
     runs-on: ubuntu-latest
     steps:
-    - name: "Check for 'hi' comment"
-      id: check_hi
-      run: |
-        comment_body=${{ github.event.comment.body }}
-        echo "Comment body: $comment_body"
-        if [[ $comment_body == "hi" ]]; then
-          echo "Responding to 'hi' comment."
-          echo "::set-output name=should_respond::true"
-        else
-          echo "Not a 'hi' comment. No response needed."
-          echo "::set-output name=should_respond::false"
-        fi
-    - name: "Respond to 'hi' comment"
-      if: steps.check_hi.outputs.should_respond == 'true'
+    - name: Check for specific comment
       uses: actions/github-script@v5
       with:
         script: |
-          github.rest.issues.createComment({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: 'hola!'
-          })
+          const issueComment = context.payload.comment.body
+          if (issueComment === 'hello') {
+            github.rest.issues.createComment({
+              issue_number: context.payload.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'hola!'
+            })
+          }
