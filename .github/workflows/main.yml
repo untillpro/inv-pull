@@ -1,23 +1,37 @@
-name: 'Hello Comment Response'
+name: 'Hello Response Workflow'
 
 on:
+  issues:
+    types: [opened]
   issue_comment:
     types: [created]
 
 jobs:
-  commentReply:
+  respond-to-hello:
     runs-on: ubuntu-latest
     steps:
-    - name: Check for specific comment
+    - name: Check for "hello" in issue description or comment
       uses: actions/github-script@v5
       with:
         script: |
-          const issueComment = context.payload.comment.body
-          if (issueComment === 'hello') {
-            github.rest.issues.createComment({
-              issue_number: context.payload.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'hola!'
-            })
+          const issueContext = context.issue;
+          const repositoryContext = context.repo;
+          let issueBody = '';
+
+          // Check if the trigger was an issue or comment event
+          if (context.eventName === 'issues') {
+            issueBody = context.payload.issue.body;
+          } else if (context.eventName === 'issue_comment') {
+            issueBody = context.payload.comment.body;
+          }
+
+          // Check if the content contains "hello"
+          if (issueBody.includes('hello')) {
+            // Add a comment to the current issue
+            await github.rest.issues.createComment({
+              owner: repositoryContext.owner,
+              repo: repositoryContext.repo,
+              issue_number: issueContext.number,
+              body: 'hola!',
+            });
           }
