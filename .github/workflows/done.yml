@@ -1,0 +1,28 @@
+name: "Assign issue to creator on specific comment"
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Assign issue to author if comment is $done
+      uses: actions/github-script@v5
+      with:
+        script: |
+          const issue = context.issue;
+          const comment_id = context.payload.comment.id;
+          const comment_body = context.payload.comment.body;
+          const creator = context.payload.issue.user.login;
+          
+          if (comment_body.trim() === "$done") {
+            github.rest.issues.addAssignees({
+              owner: issue.owner,
+              repo: issue.repo,
+              issue_number: issue.number,
+              assignees: [creator]
+            })
+          }
+        github-token: ${{secrets.GITHUB_TOKEN}}
