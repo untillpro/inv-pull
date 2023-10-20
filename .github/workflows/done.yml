@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Assign issue to author if comment is $done
-      uses: actions/github-script@v5
+      uses: actions/github-script@v6
       with:
         script: |
           const issue = context.issue;
@@ -17,7 +17,7 @@ jobs:
           const comment_body = context.payload.comment.body;
           const creator = context.payload.issue.user.login;
           
-          if (comment_body.trim() === "$done") {
+          if (comment_body.trim() === "$test") {
             github.rest.issues.addAssignees({
               owner: issue.owner,
               repo: issue.repo,
