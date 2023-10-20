@@ -32,6 +32,6 @@ jobs:
               owner: repositoryContext.owner,
               repo: repositoryContext.repo,
               issue_number: issueContext.number,
-              body: 'hola!',
+              body: '¡Hola!🤝',
             });
           }
