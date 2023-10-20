@@ -19,14 +19,14 @@ jobs:
           let issueBody = '';
 
           // Check if the trigger was an issue or comment event
-          if (context.eventName === 'issues') {
+          if (context.eventName === 'issues' && context.payload.issue) {
             issueBody = context.payload.issue.body;
-          } else if (context.eventName === 'issue_comment') {
+          } else if (context.eventName === 'issue_comment' && context.payload.comment) {
             issueBody = context.payload.comment.body;
           }
 
-          // Check if the content contains "hello"
-          if (issueBody.includes('hello')) {
+          // Ensure issueBody is not undefined or null before proceeding
+          if (issueBody && issueBody.includes('hello')) {
             // Add a comment to the current issue
             await github.rest.issues.createComment({
               owner: repositoryContext.owner,
